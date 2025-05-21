@@ -12,10 +12,10 @@ export const useCounterStore = defineStore(
   //persistを追加して状態を保持する
   {
     persist: {
-      //セッションストレージに保存する場合
-      storage: persistedState.sessionStorage,
-      //クッキーに保存する場合
-      //storage: persistedState.cookies,
-    },
+      // セッションストレージに保存する場合
+      storage: piniaPluginPersistedstate.sessionStorage
+      // クッキーに保存する場合
+      // storage: piniaPluginPersistedstate.cookies,
+    }
   }
 );

@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxt/eslint', '@nuxt/test-utils',
-    '@pinia/nuxt', "@pinia-plugin-persistedstate/nuxt",
+    '@pinia/nuxt', "pinia-plugin-persistedstate/nuxt",
     'vuetify-nuxt-module'
   ],
   pinia: {

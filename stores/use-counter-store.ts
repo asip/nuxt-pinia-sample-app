@@ -6,14 +6,17 @@ export const useCounterStore = defineStore(
     function increment() {
       count.value++;
     }
-    return { count, increment };
+    function decrement() {
+      count.value--;
+    }
+    return { count, increment, decrement };
   },
 
   //persistを追加して状態を保持する
   {
     persist: {
       // セッションストレージに保存する場合
-      storage: piniaPluginPersistedstate.sessionStorage
+      storage: piniaPluginPersistedstate.sessionStorage()
       // クッキーに保存する場合
       // storage: piniaPluginPersistedstate.cookies,
     }

@@ -13,8 +13,8 @@ useHead(
 
 <template>
   <div>
-    <div class="container">
+    <v-container>
       <slot />
-    </div>
+    </v-container>
   </div>
 </template>

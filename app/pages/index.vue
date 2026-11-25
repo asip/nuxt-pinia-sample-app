@@ -3,10 +3,8 @@ const counter = useCounterStore();
 </script>
 
 <template>
-  <!-- div -->
-  <v-container>
+  <div>
     <nuxt-link to="/count">count ページへ飛ぶ </nuxt-link> <!-- countページに遷移する -->
     <p>ボタンを{{ counter.count }}回おしました!</p>
-  </v-container>
-  <!-- /div -->
+  </div>
 </template>
